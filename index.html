@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #ff0000;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #444;
+            color: #ff0000;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ff0000;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff3333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Modern Calculator</h1>
+        <label for="num1">Number 1:</label>
+        <input type="text" id="num1">
+
+        <label for="num2">Number 2:</label>
+        <input type="text" id="num2">
+
+        <button id="calculateButton">Calculate</button>
+
+        <p>Result: <span id="result"></span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
